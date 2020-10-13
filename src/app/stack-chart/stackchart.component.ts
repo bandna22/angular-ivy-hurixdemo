@@ -56,8 +56,8 @@ export class StackChartComponent implements OnInit {
         let viewBoxHeight = 150;
         let viewBoxWidth = 200;
         this.svg = d3.select(this.hostElement).append('svg')
-            .attr('width', '100%')
-            .attr('height', '100%')
+            .attr('width', '80%')
+            .attr('height', '80%')
             .attr('viewBox', '-20 -10 ' + viewBoxWidth + ' ' + viewBoxHeight);
     }
 
@@ -152,7 +152,7 @@ export class StackChartComponent implements OnInit {
       let groups=this.groups;
       let index=0
       let subgroups=['apples','bananas','cherries','dates'];
-      console.log(groups)
+      //console.log(groups)
       subgroups.forEach(function(key){
 
         var bar = d3.select('svg').selectAll(".bar-" + key)
