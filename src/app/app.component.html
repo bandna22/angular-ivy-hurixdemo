@@ -1,0 +1,7 @@
+<div>
+<button (click)="generateData()">Generate Data</button>
+</div>
+  <h4> Yearly produce By year </h4>
+<app-stack-chart #areaChart [data]="chartData"> </app-stack-chart>
+<app-html-table #mattable [tabledata]="chartData">hi</app-html-table>
+
